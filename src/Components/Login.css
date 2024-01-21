@@ -1,0 +1,87 @@
+
+.loginPage{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.designPart{
+    width: 30%;
+    height: 100dvh;
+    background:linear-gradient(-40deg,#4481eb,#04befe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.loginForm{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+    gap: 2rem;
+ 
+}
+@media(max-width:600px){
+    .loginPage{
+        width: 600px;
+        
+    }
+    .loginForm{
+        width: 600px;
+        display: flex;
+        position: relative;
+        top: -5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .designPart{
+        width: 600px;
+        height: 12rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:400px){
+    .loginPage{
+        width: 400px;
+        
+    }
+    .designPart{
+        width: 420px;
+        height: 12rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+     }    
+     .loginlefttxt{
+        left: 2rem;
+     }
+    .loginForm{
+        width: 400px;
+        display: flex;
+        position: relative;
+        /* top: -rem; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:320){
+    .loginPage{
+        width: 320px;
+        
+    }
+    .designPart{
+        width: 420px;
+        height: 12rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+     }
+}

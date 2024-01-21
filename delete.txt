@@ -1,0 +1,64 @@
+ // const [data, setData] = useState(
+
+    //     [
+    //         {
+    //             title: 'Feed12backs',
+    //             body: "Lorem ipsum dolor sit amet consectetur",
+    //             editIcon: editIcon,
+    //             deleteIcon: deleteIcon,
+    //             date: "5 days ago"
+    //         },
+    //         {
+    //             title: 'Feedbacks',
+    //             body: "Lorem ipsum dolor sit amet consectetur",
+    //             editIcon: editIcon,
+    //             deleteIcon: deleteIcon,
+    //             date: "5 days ago"
+    //         }, {
+    //             title: 'Feedbacks',
+    //             body: "Lorem ipsum dolor sit amet consectetur",
+    //             editIcon: editIcon,
+    //             deleteIcon: deleteIcon,
+    //             date: "5 days ago"
+    //         }, {
+    //             title: 'Feedbacks',
+    //             body: "Lorem ipsum dolor sit amet consectetur",
+    //             editIcon: editIcon,
+    //             deleteIcon: deleteIcon,
+    //             date: "5 days ago"
+    //         },
+    //     ])
+
+    // const dispatch = useDispatch();
+    
+    // const getData=async()=>{
+    //    let res=await axios.get('http://localhost:8000/getData/selvamvimaldz@gmail.com');
+    //    console.log(res.data.cardData);
+    //    setVal(res.data.cardData)
+    // }
+    // const notesData = useSelector((store) => store.notesData.cardDetails);
+    // console.log(notesData);
+    
+
+
+ // dispatch(postData(newDataVal));
+
+            // dispatch(getCardDetails());
+
+            // dispatch(add(newDataVal))
+            // const sendObj={
+            //     email:"selvamvimaldz@gmail.com",
+            //     heading:"sports13",
+            //     content:"India win second test match against SA",
+            //     date:"25-12-2023"
+            //   }
+            // await axios.post("http://localhost:8000/saveData",sendObj)
+            // setData(newDataVal);
+            // SetTitle('');
+            // SetBody('');
+            // 
+               // editIndex: editIndex
+            // setData(edit(newEditVal));
+            // console.log(newEditVal);
+            // dispatch(edit(newEditVal))
+            // console.log("enter into edit content");

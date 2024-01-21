@@ -1,0 +1,266 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.mainSetUp{
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* justify-content: center; */
+}
+.notesCardSetup{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .side-b-btn{
+  /* width: 60%; */
+  /* height: 3em; */
+  /* display: flex;
+  gap: 1em; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* text-decoration: none; */
+  /* color: #fff !important; */
+  /* background-color: #203562 !important; */
+  /* border-radius: 4px; */
+  
+/* } */
+/* .side-b-btn:hover{ */
+  /* background-color: #2467f7 !important; */
+/* } */ 
+
+/* content */
+
+.noteCon{
+  width: 80%;
+  height: 100vh;
+  display: flex;  
+  flex-direction: column;
+  background-color:#a4bbec34;
+  gap: 3em;
+  overflow-y: scroll;
+}
+
+.dummy{
+  width: 100%;
+  /* may be height check  pananum depend media query  */
+  height: 18em;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  /* margin-bottom: 2em;
+  position: sticky;
+  top: 6rem; */
+}
+.add-btn{
+  width: 10%;
+  margin-left: 2.5em;
+  margin-bottom: 1em;
+  background-color: #203562;
+  font-family: 'Montserrat', sans-serif;
+}
+.notes-entry{
+  width: 95%;
+  /* may be height check  pananum depend media query  */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  border-radius: 8px;
+}
+.notes-in-bx{
+  border:none;
+  width: 50%;
+  padding: 1em;
+  margin:0em 0em 0em 2em;
+}
+.notes-txt-bx{
+  border: none;
+  width: 50%;
+  height: 20em;
+  padding: .5em;
+  margin:0em 0em 0em 2.5em;
+
+}
+/* card */
+.carddesc{
+  /* background-color: red; */
+}
+.nameActiveSec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+input:focus{
+  outline: none;
+  border: none;
+  
+}
+input::placeholder{
+  color: #203562;
+  opacity: 1!important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea{
+  outline: none;
+  border: none;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+  border: none;
+}
+textarea::placeholder{
+  color: #bac7df;
+  font-family: 'Montserrat', sans-serif;
+  overflow: auto;
+  opacity: 1;
+}
+.notes-fetch-Main{
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.notes-fetch{
+  width: 100%;
+  display: flex; 
+  margin-left: 2em;
+  gap: 1em;
+   align-items: center;
+   font-family: 'Montserrat', sans-serif;
+}
+.notesCard{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.mainViewNotesCard{
+  width: 100%;
+  height: auto;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+   /* align-items: center;  */
+  gap: 2em;
+  /* background-color: #203562; */
+}
+.notesCardCom{
+    width: 80%;
+    height: 100vh;
+    display: flex;  
+    flex-wrap: wrap;
+    /* margin-top: 4rem; */
+    /* flex-direction: column; */
+    background-color:#a4bbec34;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    /* background-color: #2467f7; */
+    overflow-y: scroll;
+
+}
+.notesCardcomponent{
+  width: 14em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  transition: .9s;
+}
+.notesCardcomponent:hover{
+  /* width: 20em; */
+  transform: scale(1.15);
+  transition: .9s;
+}
+.sepNotesCardcomponent:hover{
+  /* width: 20em; */
+  transform: scale(1.15);
+  transition: .9s;
+}
+.sepNotesCardcomponent{
+  width: 14em;
+  height: 14em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fff;
+  align-items: center;
+  transition: .9s;
+
+}
+
+.card-head{
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+.actionIcon{
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+}
+.card-body{
+  width: 90%;
+  display: flex;
+  text-align: left;
+  
+}
+@media(max-width:800px){
+  .mainSetUp{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .sidebar{
+    width: 800px;
+  }
+  /* .side-b-btn{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  } */
+  .noteCon{
+    width: 800px;
+  }
+  .add-btn{
+    width: 20%;
+  }
+  .card-data-toggle{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+}
