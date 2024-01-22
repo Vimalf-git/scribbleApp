@@ -5,7 +5,7 @@ import './Signup.css'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
-import ApiService from '../Common/ApiService'
+import ApiService from '../../Common/ApiService'
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 function Signup() {

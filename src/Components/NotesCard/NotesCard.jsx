@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { NotesDataContext } from './NotesContext';
-import ApiService from '../Common/ApiService';
+import { NotesDataContext } from '../Context/NotesContext';
+import ApiService from '../../Common/ApiService';
 import { toast } from 'react-toastify';
 import './NotesCard.css';
 const NotesCard = React.memo(({ isProb = false }) => {

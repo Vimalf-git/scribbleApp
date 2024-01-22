@@ -3,7 +3,7 @@ import deleteIcon from './Redux/image/delete.svg'
 import editIcon from './Redux/image/edit.svg'
 import notesBlueIcon from './Redux/image/notes-blueIcon.svg'
 import { useNavigate } from 'react-router-dom';
-import ApiService from '../Common/ApiService';
+import ApiService from '../../Common/ApiService';
 import { toast } from 'react-toastify';
 import { jwtDecode } from 'jwt-decode';
 export const NotesDataContext = React.createContext();
