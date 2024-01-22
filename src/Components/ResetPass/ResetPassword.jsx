@@ -38,14 +38,14 @@ function ResetPassword() {
                 password: pass
             })
             if (res.status === 200) {
-                toast.success('Password changed');
                 setPass(" ")
                 navigate('/')
+                toast.success('Password changed');
             }
         } catch (error) {
             if (error.response.data.status === 400) {
-                toast.error('Invalid user')
                 navigate('/forgetpassword')
+                toast.error('Invalid user')
             } else {
                 navigate('/forgetpassword')
                 toast.error(error.response.data.message);

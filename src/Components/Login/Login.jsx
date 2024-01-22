@@ -5,6 +5,7 @@ import './Login.css';
 import { Button, IconButton, InputAdornment, TextField, Typography } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import ApiService from '../../Common/ApiService';
+import ScribbleImg from '../../assets/Login/scribleLogin.svg'
 function Login() {
     const [email, setMail] = useState("")
     const [password, setPassword] = useState("");
@@ -48,27 +49,26 @@ function Login() {
     return (
         <>
             <div className='loginPage'>
-                <div className='designPart' >
-                    <Typography variant='h5' component="p"
-                        sx={{ color: "#ffff" }}>
-                        New Here?</Typography>
-                    <Button variant='contained' color='warning' onClick={(e) =>toggleSign(e)}>Sign Up</Button>
+                <div className='designPart'>
+                     <Typography className='scribblename' variant='h5' component="p">
+                    Scribble Here</Typography>
+                    {/*<Button variant='contained' color='warning' onClick={(e) =>toggleSign(e)}>Sign Up</Button> */}
+                    <img src={ScribbleImg} className="scribbleImg"/>
                 </div>
                 <div className='loginForm'>
                     <Typography variant='h5' component="p"
                         sx={{ color: "#4481eb" }}>
-                        Login
+                        Login Account
                     </Typography>
                     <form >
                         <div className="form-floating login-box  mb-3" >
-                            <TextField required id="outlined-basic" label="Email" variant="outlined" sx={{ width: '15em' }}
+                            <TextField required id="outlined-basic" label="Email" variant="outlined" sx={{ width: '20em' }}
                                 onChange={(e) => setMail(e.target.value)}
                             />
                         </div>
                         <div className="form-floating  mb-3">
-
                             <TextField required id="outlined-basic" label="Password" variant="outlined"
-                                sx={{ width: '15em' }}
+                                sx={{ width: '20em' }}
                                 onChange={(e) => setPassword(e.target.value)}
                                 type={showPassword ? 'text' : 'password'}
                                 InputProps={{
@@ -84,11 +84,11 @@ function Login() {
                                             </IconButton>
                                         </InputAdornment>
                                 }}
-
                             />
                         </div>
                         <div className='for-crt-link mb-3'>
                             <Link style={{ textDecoration: 'none', color: '#4481eb' }} to='/forgetpassword'>Forget password?</Link>
+                            <Link style={{ textDecoration: 'none', color: '#4481eb' }} to='/signup'>New to Here?</Link>
                         </div>
                         <div className="d-grid">
                             <Button variant='contained' color='primary'
