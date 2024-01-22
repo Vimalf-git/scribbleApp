@@ -1,13 +1,5 @@
-    /* .notesCardmain{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    } */
-
 @media(max-width:768px){
     .notesCardCom{
-        /* display: flex;
-        justify-content: center; */
         width: 100%;
         margin-top: 7rem;
     }
@@ -16,7 +8,6 @@
 @media(min-width:2559px){
     .mainViewNotesCard{
         width: 2559px;
-        /* background-color: aqua; */
     }
     .notesCardcomponent{
         width: 40rem;

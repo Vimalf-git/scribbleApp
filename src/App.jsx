@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Sidebar from './Components/Sidebar'
 import NotesContent from './Components/NotesContent'
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <>
-      {/* <div className='mainSetUp'> */}
         <BrowserRouter>
           <Routes>
           <Route index element={<Login />} />
@@ -35,8 +33,6 @@ function App() {
             } />
           </Routes>
         </BrowserRouter>
-      {/* </div> */}
-
     </>
   )
 }

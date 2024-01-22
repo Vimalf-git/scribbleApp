@@ -26,8 +26,6 @@
     align-items: center;
     box-shadow: #a4bbec34 1.95px 0px 2.6px;
     gap: 2em;
-    /* background-color: red; */
-
 }
 
 
@@ -51,7 +49,6 @@
     height: 2.5rem;
     align-items: center;
     justify-content: center;
-    /* background-color: aqua; */
     color: #203562 !important;
 }
 
@@ -85,7 +82,6 @@
         width: 800px;
         height: 5rem;
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
         position: fixed;
         top: 1px;
@@ -98,10 +94,7 @@
         position: relative;
         right: -33em;
         z-index: 1;
-        /* right: 2em; */
-        /* margin-right:2rem; */
-        /* font-size: 2.5em !important; */
-    }
+        }
 
     .burgerBox {
         width: 16rem;
@@ -115,7 +108,6 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 1rem;
-        /* z-index: 1; */
     }
 
     .avatarMbV {
@@ -156,7 +148,6 @@
         height: 5rem;
         display: flex;
         justify-content: center;
-        /* background-color: aqua; */
         font-size: 4em !important;
     }
 

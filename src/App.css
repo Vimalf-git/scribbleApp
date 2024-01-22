@@ -8,7 +8,6 @@
   width: 100%;
   height: auto;
   display: flex;
-  /* justify-content: center; */
 }
 .notesCardSetup{
   width: 80%;
@@ -17,26 +16,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .side-b-btn{
-  /* width: 60%; */
-  /* height: 3em; */
-  /* display: flex;
-  gap: 1em; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  /* text-decoration: none; */
-  /* color: #fff !important; */
-  /* background-color: #203562 !important; */
-  /* border-radius: 4px; */
-  
-/* } */
-/* .side-b-btn:hover{ */
-  /* background-color: #2467f7 !important; */
-/* } */ 
-
-/* content */
-
 .noteCon{
   width: 80%;
   height: 100vh;
@@ -54,9 +33,7 @@
   display: flex;
   justify-content: center;
   margin-top: 3em;
-  /* margin-bottom: 2em;
-  position: sticky;
-  top: 6rem; */
+  
 }
 .add-btn{
   width: 10%;
@@ -89,10 +66,7 @@
   margin:0em 0em 0em 2.5em;
 
 }
-/* card */
-.carddesc{
-  /* background-color: red; */
-}
+
 .nameActiveSec{
   display: flex;
   justify-content: center;
@@ -157,22 +131,17 @@ textarea::placeholder{
   display: flex;  
   flex-wrap: wrap;
   justify-content: center;
-   /* align-items: center;  */
   gap: 2em;
-  /* background-color: #203562; */
 }
 .notesCardCom{
     width: 80%;
     height: 100vh;
     display: flex;  
     flex-wrap: wrap;
-    /* margin-top: 4rem; */
-    /* flex-direction: column; */
     background-color:#a4bbec34;
     justify-content: center;
     align-items: center;
     gap: 2em;
-    /* background-color: #2467f7; */
     overflow-y: scroll;
 
 }
@@ -191,12 +160,10 @@ textarea::placeholder{
   transition: .9s;
 }
 .notesCardcomponent:hover{
-  /* width: 20em; */
   transform: scale(1.15);
   transition: .9s;
 }
 .sepNotesCardcomponent:hover{
-  /* width: 20em; */
   transform: scale(1.15);
   transition: .9s;
 }
@@ -242,11 +209,6 @@ textarea::placeholder{
   .sidebar{
     width: 800px;
   }
-  /* .side-b-btn{
-  width: 30%;
-  display: flex;
-  align-items: center;
-  } */
   .noteCon{
     width: 800px;
   }

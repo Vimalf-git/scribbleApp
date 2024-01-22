@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef} from 'react'
 import NotesCard from './NotesCard'
 import { Button } from 'react-bootstrap'
 import { NotesDataContext } from './NotesContext'
@@ -91,7 +91,6 @@ const NotesContent = React.memo(() => {
                 </div>
                 <div className='notes-fetch-Main'>
                     <div className='notes-fetch'>
-                        {/* <img src={notesBlueIcon} /> */}
                         <Description className='descIcon' style={{color:'#203562'}}/>
                         <span style={{ color: "#203562", fontSize: '1.5em' }}>My Notes</span>
                     </div>
