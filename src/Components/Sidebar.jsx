@@ -72,7 +72,7 @@ function Sidebar() {
                         <Description className='descIcon' />Notes
                     </Link>
                 </div>
-                <Button className='logoutBtn' onClick={() => { }}><Logout className='logoutIcon' />Logout</Button>
+                <Button className='logoutBtn' onClick={() => { logout()}}><Logout className='logoutIcon' />Logout</Button>
             </div>
             <div className='mobileViewSideBar'>
                 <h1 style={{ color: "#203562", cursor: 'pointer', marginLeft: '2rem' }} onClick={() => { navigate('/notescontent') }}>Notes App</h1>
