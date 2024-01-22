@@ -6,6 +6,8 @@ import NotesContext from './Components/NotesContext'
 import NotesCard from './Components/NotesCard'
 import Login from './Components/Login'
 import Signup from './Components/Signup'
+import ForgetPass from './Components/ForgetPass/ForgetPass'
+import ResetPassword from './Components/ResetPass/ResetPassword'
 
 function App() {
 
@@ -31,6 +33,8 @@ function App() {
                 </div> 
                 </NotesContext>
             } />
+            <Route path='/forgetpassword' element={<ForgetPass/>}/>
+            <Route path='/resetpassword/*' element={<ResetPassword/>}/>
           </Routes>
         </BrowserRouter>
     </>

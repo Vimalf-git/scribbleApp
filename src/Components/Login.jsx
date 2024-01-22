@@ -91,7 +91,7 @@ function Login() {
                             />
                         </div>
                         <div className='for-crt-link mb-3'>
-                            <Link style={{ textDecoration: 'none', color: '#4481eb' }} to='/forget'>Forget password?</Link>
+                            <Link style={{ textDecoration: 'none', color: '#4481eb' }} to='/forgetpassword'>Forget password?</Link>
                         </div>
                         <div className="d-grid">
                             <Button variant='contained' color='primary'
