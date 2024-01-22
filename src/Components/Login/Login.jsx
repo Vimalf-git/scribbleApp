@@ -38,7 +38,6 @@ function Login() {
 
     const toggleSign = (e) => {
         e.preventDefault();
-        console.log('enter into');
         navigate('/signup')
     }
     const [showPassword, setShowPassword] = useState(false);
@@ -46,8 +45,6 @@ function Login() {
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
-    let windowSize=window.innerWidth
-    console.log(windowSize);
     return (
         <>
             <div className='loginPage'>

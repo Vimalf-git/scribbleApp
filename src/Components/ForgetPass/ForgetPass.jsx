@@ -15,9 +15,7 @@ function ForgetPass() {
     const mailSend = async () => {
         try {
             if (mail !== "") {
-                console.log("enter  into fun ");
                 const res = await ApiService.post('/forgetpass', { email: mail })
-                console.log(res.data);
                 if (res.status === 200) {
                     toast.success('check your mail')
                 }
@@ -29,26 +27,17 @@ function ForgetPass() {
                 toast.error('Invalid mail')
             } else {
                 toast.error(error.response.data.message);
-                // console.log(error);
             }
         }
     }
     return (
         <>
             <div className='forgetPass'>
-                {/* */}
                 <div className='forgetPass-l'> 
                 <img className='forPassImg' src={ForgetPassImg}/>
                 </div>
                 <div className='forgetPass-r'>
-                <h1
-                    // component='h4'
-                    // color={'#ffff'}
-                    // sx={{
-                    //     bgcolor: 'black', width: '10rem', display: 'flex',
-                    //     borderRadius: '.2rem', justifyContent: 'center', height: '3rem', alignItems: 'center'
-                    // }}
-                >
+                <h1>
                     Forget Password
                 </h1>
                      <TextField sx={{ m: 1, width: '15rem' }}
@@ -57,13 +46,10 @@ function ForgetPass() {
                     />
                     <Button onClick={() => {mailSend()}}
                         variant='contained'
-                        // color=''
                     >
                         send &nbsp;<ForwardToInbox/>
-                        {/* <SendIcon /> */}
                     </Button> 
                 </div>
-
             </div>
 
         </>

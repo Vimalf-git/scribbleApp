@@ -22,7 +22,6 @@ const NotesContent = React.memo(() => {
     const addData = async () => {
         const heading = refTitle.current.value;
         const content = refBody.current.value;
-        console.log(heading);
         const mon = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
         let date = new Date()
         let curDate = date.getDate() + ":" + mon[date.getMonth()] + ":" + date.getFullYear()

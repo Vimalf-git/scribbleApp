@@ -17,7 +17,6 @@ function ResetPassword() {
 
         try {
             let res = await ApiService.get(`forgetpass/getres/${id}/${token}`)
-            console.log(res.data);
             if (res.status === 200) {
                 setMail(res.data.mail)
                 toast.success("verified");
@@ -34,7 +33,6 @@ function ResetPassword() {
     const changePassword = async (e) => {
         // e.preventDefault()
         try {
-            console.log(mail);
             const res = await ApiService.post('/forgetpass/updatepassword', {
                 email: mail,
                 password: pass
@@ -49,8 +47,8 @@ function ResetPassword() {
                 toast.error('Invalid user')
                 navigate('/forgetpassword')
             } else {
-                toast.error(error.response.data.message);
                 navigate('/forgetpassword')
+                toast.error(error.response.data.message);
             }
         }
     }

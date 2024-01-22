@@ -18,7 +18,6 @@ const NotesCard = React.memo(({ isProb = false }) => {
                 toast.success("delete success")
             }
         } catch (error) {
-            console.log(error);
             if (error.response.status === 400) {
                 toast.error(error.response.data.message)
                 sessionStorage.clear()

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import deleteIcon from './Redux/image/delete.svg'
-import editIcon from './Redux/image/edit.svg'
-import notesBlueIcon from './Redux/image/notes-blueIcon.svg'
+import deleteIcon from './image/delete.svg'
+import editIcon from './image/edit.svg'
+import notesBlueIcon from './image/notes-blueIcon.svg'
 import { useNavigate } from 'react-router-dom';
 import ApiService from '../../Common/ApiService';
 import { toast } from 'react-toastify';
@@ -21,10 +21,7 @@ function NotesContext({ children }) {
             let email=jwtDecode(token).email
             const res = await ApiService.get(`http://localhost:8000/getData/${email}`);
             setData(res.data.cardData)
-            console.log(res.status);
         } catch (error) {
-            console.log(error);
-            console.log(error.response.status === 400);
             if (error.response.status === 400) {
                 toast.error("token expired")
                 sessionStorage.clear()
@@ -37,7 +34,6 @@ function NotesContext({ children }) {
             }
         }
     }
-    console.log(data);
     useEffect(() => {
         getData();
     }, [])
