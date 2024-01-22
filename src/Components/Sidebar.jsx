@@ -7,6 +7,7 @@ import Avatar from '@mui/material/Avatar';
 import { jwtDecode } from 'jwt-decode';
 import { Close, Description, Home, Logout, LunchDining } from '@mui/icons-material';
 import './SideBar.css'
+import { toast } from 'react-toastify';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -41,7 +42,9 @@ function Sidebar() {
     let navigate = useNavigate();
     const logout = () => {
         sessionStorage.clear()
+        toast.warning("Logout")
         navigate('/login')
+
     }
     const [name, setName] = useState("");
     useEffect(() => {
