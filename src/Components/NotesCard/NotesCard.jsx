@@ -4,6 +4,7 @@ import ApiService from '../../Common/ApiService';
 import { toast } from 'react-toastify';
 import './NotesCard.css';
 const NotesCard = React.memo(({ isProb = false }) => {
+    
     const { data, setData, setEditindex, navigate, setAddOrEdit, editIcon, deleteIcon
         , getData, setLocalIndex }
         = useContext(NotesDataContext);

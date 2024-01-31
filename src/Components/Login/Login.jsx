@@ -50,10 +50,10 @@ function Login() {
         <>
             <div className='loginPage'>
                 <div className='designPart'>
-                     <Typography className='scribblename' variant='h5' component="p">
-                    Scribble Here</Typography>
+                    <Typography className='scribblename' variant='h5' component="p">
+                        Scribble Here</Typography>
                     {/*<Button variant='contained' color='warning' onClick={(e) =>toggleSign(e)}>Sign Up</Button> */}
-                    <img src={ScribbleImg} className="scribbleImg"/>
+                    <img src={ScribbleImg} className="scribbleImg" />
                 </div>
                 <div className='loginForm'>
                     <Typography variant='h5' component="p"
@@ -85,6 +85,11 @@ function Login() {
                                         </InputAdornment>
                                 }}
                             />
+                        </div>
+                        <div>
+                            <p>Use this for demo⬇️</p>
+                            <p>E-mail:-selvamvimaldz1@gmail.com</p>
+                            <p>Password:-vimal</p>
                         </div>
                         <div className='for-crt-link mb-3'>
                             <Link style={{ textDecoration: 'none', color: '#4481eb' }} to='/forgetpassword'>Forget password?</Link>

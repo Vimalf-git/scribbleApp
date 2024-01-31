@@ -63,7 +63,6 @@ function Sidebar() {
                         overlap="circular"
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                         variant="dot"
-
                     >
                         <Avatar className='avatarIcon'>{name.charAt(0) + name.charAt(1)}</Avatar>
                     </StyledBadge>
