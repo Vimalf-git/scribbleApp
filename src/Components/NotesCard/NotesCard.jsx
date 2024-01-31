@@ -4,11 +4,12 @@ import ApiService from '../../Common/ApiService';
 import { toast } from 'react-toastify';
 import './NotesCard.css';
 const NotesCard = React.memo(({ isProb = false }) => {
-    
+
     const { data, setData, setEditindex, navigate, setAddOrEdit, editIcon, deleteIcon
         , getData, setLocalIndex }
         = useContext(NotesDataContext);
     const delData = async (index, i) => {
+
         let newArr = [...data];
         newArr.splice(i, 1);
         setData(newArr)
@@ -29,7 +30,9 @@ const NotesCard = React.memo(({ isProb = false }) => {
                 sessionStorage.clear()
                 navigate('/login')
             }
+
         }
+
     }
     const editData = (index, i) => {
         if (!isProb) {
@@ -46,18 +49,12 @@ const NotesCard = React.memo(({ isProb = false }) => {
     return (
         <div className={isProb ? 'mainViewNotesCard' : 'notesCardCom'}>
             <>
-                {/* {isProb?"":<p style={{width:'80%',backgroundColor:'#203562',marginTop:'2rem',height:'2rem',
-                display:'flex',alignItems:'center',borderRadius:'.5rem',textIndent:'1rem',color:'#fff',position:'sticky',top:'5rem',zIndex:'1'
-                ,  fontFamily: 'Montserrat' ,marginBottom:'2rem'
-                }}>Your Scribble</p>} */}
                 {
                     data && data.map((e, i) => {
                         return (
                             <div key={i} className={isProb ? 'notesCardcomponent' : "sepNotesCardcomponent"}>
-
                                 <div className='card-head'>
                                     <div>
-
                                         <h4>{e.heading}</h4>
                                     </div>
                                     <div className='actionIcon'>

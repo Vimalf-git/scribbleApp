@@ -26,11 +26,15 @@
     .forgetPass-l{
         width: 769px;
         height: 70vh;
+        /* display: none; */
         /* background-color: aqua; */
     }
     .forgetPass-r{
         width: 769px;
         height: 30vh;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
         position: relative;
         top: -3rem;
     }
@@ -42,13 +46,17 @@
     .forgetPass-l{
         width: 426px;
         height: 60vh;
+        display: none;
+
         /* background-color: aqua; */
     }
     .forgetPass-r{
         width: 426px;
-        height: 20vh;
-        position: relative;
-        top: -1.5rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     .forPassImg{
         width: 350px;
@@ -58,13 +66,17 @@
     .forgetPass-l{
         width: 376px;
         height: 60vh;
+        display: none;
+
         /* background-color: aqua; */
     }
     .forgetPass-r{
         width: 376px;
-        height: 20vh;
-        position: relative;
-        top: -2rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     .forPassImg{
         width: 320px;
@@ -74,13 +86,17 @@
     .forgetPass-l{
         width: 321px;
         height: 60vh;
+        display: none;
         /* background-color: aqua; */
     }
     .forgetPass-r{
         width: 321px;
-        height: 30vh;
-        position: relative;
-        top: -2rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
     }
     .forPassImg{
         width: 300px;
